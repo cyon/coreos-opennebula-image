@@ -11,3 +11,5 @@ if [ "$REMOVE_VAGRANT_KEY" = "true" ] || [ "$REMOVE_VAGRANT_KEY" = "1" ]; then
     # Truncate authorized_keys instead.
     sudo update-ssh-keys -u core -d oem-provisioner || sudo truncate -s0 $(getent passwd 'core' | cut -d: -f6)/.ssh/authorized_keys
 fi
+
+sleep 30

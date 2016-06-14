@@ -25,7 +25,7 @@
                 ["-device", "virtio-9p-pci,fsdev=conf,mount_tag=config-2"],
                 ["-device", "virtio-net,netdev=user.0"]
             ],
-            "shutdown_command": "sudo -S shutdown -P now",
+            "shutdown_command": "sudo -S shutdown -P +1",
             "ssh_private_key_file": "files/vagrant_id_rsa",
             "ssh_timeout": "60m",
             "ssh_username": "core",
